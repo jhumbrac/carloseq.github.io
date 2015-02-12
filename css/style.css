@@ -4,14 +4,31 @@ body {
 	color: #007DA1;
 	font-family: Helvetica, Sans-Serif;
 }
+header {
+	background:#fff;
+}
+nav {
+	float:right;
+}
+nav li {
+	float:left;
+}
+section {}
 h1 {
 	text-transform: uppercase;
-	text-align:center;
-	font-size: 50px;
+	font-size: 3em;
+	float:left;
 }
 #slogan {
 	font-style: italic;
 }
 hr {
 	width: 400px;
+}
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
 }
