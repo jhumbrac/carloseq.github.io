@@ -16,6 +16,7 @@ nav ul {
 }
 nav li {
 	float:left;
+	margin:0 1em 0 1em;
 }
 nav a {
 	color:#007da1;
