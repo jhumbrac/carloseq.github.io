@@ -1,50 +1,116 @@
-*{margin:0;padding:0;box-sizing:border-box;}
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(https://fonts.googleapis.com/css?family=Spinnaker);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-	background-color: #7BBFCF;
-	color: #007DA1;
+	background-color: #035773;
+	color: #fff;
 	font-family: Helvetica, Sans-Serif;
 }
 header {
-	background:#fff;
-}
-nav {
-	float:right;
-	margin:1em 2em 1em 2em;
-}
-nav ul {
-	list-style-type:none;
-}
-nav li {
-	float:left;
-	margin:0 1em 0 1em;
-}
-nav a {
-	color:#007da1;
-	text-decoration:none;
-}
-section {
-	margin:300px auto 0 auto;
-	width:40em;
-}
-h1 {
+	position: fixed;
+	float: left;
+	width: 200px;
+	height: 100%;
+	text-align: right;
 	text-transform: uppercase;
-	font-size: 3em;
-	float:left;
-	margin-left:.5em;
+	z-index: 1000;
 }
-#slogan {
-	font-style: italic;
+.section-green {
+	background-color: #529FB9;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.nav-sidebar {
+	font-size: 12px;
+	font-weight: 600;
+	/*margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+	margin-top: 0;*/
+}
+ul {
+	/*display: block;*/
+}
+.section-green .nav-sidebar li {	
+	border-bottom: 1px solid #2686A6;/*#2686A6;*/
+}
+/*.nav-sidebar li {
+	position: relative;
+	display: block;
+}*/
+.nav-sidebar li a {
+	padding: 18px;
+	/*position: relative;*/
+	display: block;
+}
+.nav-sidebar a {
+	color: inherit;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	background: 0 0;
+	cursor: auto;
+}
+#content {
+	position: relative;
+	padding-left: 200px;
+	height: 100%;
+}
+#profile {
+	position: relative;
+	padding: 60px;
+	width: 100%;
+	height: 100%;
+}
+.top-menu {
+	padding-bottom: 70px;
+	margin-bottom: 50px;
+}
+.profile-title {
+	position: absolute;
+	top: 50%;
+	color: #fff;
+}
+.profile-title h1 {
+	font-family: 'Syncopate', sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.profile-title p {
+	font-family: 'Spinnaker', sans-serif;
+	font-size: 20px;
+}
+.bottom-menu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 50px 50px;
+	padding-top: 55px;
+	/*margin-top: 50px;*/
+	font-size: 12px;
+	font-weight: 500;
+}
+.nav-info {
+	/*padding-left: 0;
+	list-style: none;*/
+	margin-left: 5px;
+}
+.nav-info li {
+	margin-right: 15px;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 hr {
 	width: 400px;
-}
-p {
-	margin:1em 0 1em 0;
-}
-.clearfix:after { 
-	content: "."; 
-	visibility: hidden; 
-	display: block; 
-	height: 0; 
-	clear: both;
 }
